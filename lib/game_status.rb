@@ -43,7 +43,6 @@ def won?(board)
   if false
     return false
   end
-  winning_team
   #binding.pry
 end
     
