@@ -48,8 +48,9 @@ WIN_COMBINATIONS = [
 # combo = [board [0..2]]
 # puts combo if combo[0].all? "X"
 
+winning_team=[]
+
 def won?(board)
-  winning_combo = []
   WIN_COMBINATIONS.each do |win_combination|
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
@@ -61,9 +62,11 @@ def won?(board)
     
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
       return win_combination
+      winning_team<< "X"
     elsif 
       position_1 == "O" && position_2 == "O" && position_3 == "O"
       return win_combination
+      winning_team<< "0"
     else
       false
     end
@@ -92,8 +95,11 @@ def draw?(board)
 end
 
 def over?(board)
-  if won?board || draw?(board) || full?(board)
-    true
-  end
+  won?(board) || draw?(board) || full?(board)
+end
+ 
+ 
+def winner
+   winning_team
 end
     
