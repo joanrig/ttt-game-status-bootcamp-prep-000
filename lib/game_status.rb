@@ -72,5 +72,6 @@ def winner(board)
     board[win_combination[0]]
   elsif !won?(board)
     nil
+  end
 end
     
