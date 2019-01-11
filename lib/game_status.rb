@@ -38,11 +38,11 @@ def won?(board)
     else
       false
     end
+    winner
   end
   if false
     return false
   end
-  winner
   binding.pry
 end
     
