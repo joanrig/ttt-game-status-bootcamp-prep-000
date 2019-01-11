@@ -71,6 +71,7 @@ end
  
  
 def winner(board)
+  this_team_won
    
 end
     
