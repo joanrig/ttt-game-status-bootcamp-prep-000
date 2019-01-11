@@ -33,8 +33,8 @@ def won?(board)
       this_team_won = "X"
     elsif 
       position_1 == "O" && position_2 == "O" && position_3 == "O"
-      this_team_won = "0"
       return win_combination
+      this_team_won = "0"
     else
       false
     end
