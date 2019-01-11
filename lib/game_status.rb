@@ -99,7 +99,7 @@ def over?(board)
 end
  
  
-def winner
+def winner(board)
    winning_team
 end
     
