@@ -44,7 +44,7 @@ def won?(board)
     return false
   end
   winning_team
-  binding.pry
+  #binding.pry
 end
     
 def full?(board)  
