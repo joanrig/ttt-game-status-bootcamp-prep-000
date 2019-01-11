@@ -17,36 +17,6 @@ WIN_COMBINATIONS = [
   [2,4,6], # Right diagonal
   ]
   
-# 
-# board = ["X", "X", "X", " ", " ", " ", " ", " ", " "] 
- 
-# winners = [
-#     [board [0..2]],
-#     [board [3..5]],
-#     [board [6..8]],
-#     [board[0], board[3],board[6]], 
-#     [board[1], board[4],board[7]], 
-#     [board[2], board[5],board[8]], 
-#     [board[0], board[4],board[8]], 
-#     [board[2], board[4],board[6]]
-#     ]
-
-# def won?(board, winners)
-#   winning_combo = []
-#   winners.each do |combo|
-#     if combo[0].all? "X" || combo[0].all? "O"
-#       winning_combo<< combo
-#     end
-#   end
-#   winning_combo
-# end
-
-# won?(board,winners)
-
-
-# board = ["X", "X", "X", " ", " ", " ", " ", " ", " "] 
-# combo = [board [0..2]]
-# puts combo if combo[0].all? "X"
 
 winning_team=[]
 
@@ -74,6 +44,7 @@ def won?(board)
   if false
     return false
   end
+  binding.pry
 end
     
 def full?(board)  
