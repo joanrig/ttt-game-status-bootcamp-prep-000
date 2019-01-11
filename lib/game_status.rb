@@ -30,15 +30,15 @@ def won?(board)
     
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
       return win_combination
-      winner = "X"
+      this_team_won = "X"
     elsif 
       position_1 == "O" && position_2 == "O" && position_3 == "O"
-      winner = "0"
+      this_team_won = "0"
       return win_combination
     else
       false
     end
-    winner
+    this_team_won
   end
   if false
     return false
